@@ -1,3 +1,6 @@
 [submodule "sub-module"]
 	path = sub-module
 	url = git@github.com:faquraeshi/sub-module.git
+[submodule "static-uploads"]
+	path = static-uploads
+	url = git@github.com:faquraeshi/static-uploads.git
