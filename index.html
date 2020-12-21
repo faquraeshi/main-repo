@@ -1,55 +1,79 @@
 <html>
-<head>
-<style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-}
+  <head>
+    <style>
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
+      div.gallery_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+      }
 
-div.gallery img {
-  width: 100%;
-}
+      div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        flex-grow: 1;
+      }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-</style>
-</head>
-<body>
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
 
-<div class="gallery">
-  <a target="_blank" href="images/img_5terre.jpg">
-    <img src="images/img_5terre.jpg?raw=true" alt="Cinque Terre" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
+      div.gallery > a {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background: #eee;
+      }
 
-<div class="gallery">
-  <a target="_blank" href="images/img_forest.jpg">
-    <img src="images/img_forest.jpg?raw=true" alt="Forest" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
+      div.gallery img {
+        width: 95%;
+        padding: 20px 5px;
+      }
 
-<div class="gallery">
-  <a target="_blank" href="images/img_lights.jpg">
-    <img src="images/img_lights.jpg?raw=true" alt="Northern Lights" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
 
-<div class="gallery">
-  <a target="_blank" href="images/img_mountains.jpg">
-    <img src="images/img_mountains.jpg?raw=true" alt="Mountains" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
+      code {
+        color: maroon;
+        padding: 3px 5px;
+        background: #efefef;
+      }
+    </style>
+  </head>
+  <body>
 
-</body>
+    <div class="gallery_wrapper">
+
+      <div class="gallery">
+        <a target="_blank" href="sub-module/img/bg01.jpg">
+          <img src="sub-module/img/bg01.jpg?raw=true" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">This image comes from the <code>sub-module</code> submodule source</div>
+      </div>
+    
+      <div class="gallery">
+        <a target="_blank" href="images/img_forest.jpg">
+          <img src="images/img_forest.jpg?raw=true" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    
+      <div class="gallery">
+        <a target="_blank" href="images/img_lights.jpg">
+          <img src="images/img_lights.jpg?raw=true" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    
+      <div class="gallery">
+        <a target="_blank" href="images/img_mountains.jpg">
+          <img src="images/img_mountains.jpg?raw=true" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+
+    </div>
+
+  </body>
 </html>
