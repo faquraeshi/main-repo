@@ -1,8 +1,7 @@
 [submodule "sub-module"]
 	path = sub-module
 	url = https://github.com/faquraeshi/sub-module.git
-	ignore = all
+
 [submodule "static-uploads"]
 	path = static-uploads
 	url = https://github.com/faquraeshi/static-uploads.git
-	ignore = all
